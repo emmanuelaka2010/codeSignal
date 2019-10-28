@@ -12,9 +12,29 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
 
 Route::get('/login', function () {
     return view('login');
+});
+
+Route::get('/arcade', function () {
+    return view('arcade');
+});
+
+Route::get('/arcade/intro', function () {
+    return view('arcade_intro');
+});
+
+Route::get('/signup', function () {
+    return view('sign_up');
+});
+
+Route::get('/code', function () {
+    return view('code');
+});
+
+Route::get('/exercice', function () {
+    return view('exercice');
 });
